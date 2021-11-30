@@ -5,5 +5,5 @@ Le projet consite en la création
 
 ## Linux
 ```bash
-npm install chart.js
+git clone https://github.com/Ertinox-08/Projet-1.git
 ```
