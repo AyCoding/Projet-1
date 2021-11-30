@@ -1,9 +1,23 @@
 # Bienvenue sur le Projet 1
 
 ## Genèse du projet
-Le projet consite en la création
+Création d'un interface qui permettra de visualisé les rélevés pluviométriques via une page Web
+___
+## Technologies utilisée
+**JavaScript**
+* Chart.js
 
-## Linux
-```bash
-git clone https://github.com/Ertinox-08/Projet-1.git
+**Python**
+* CSV
+* Pandas
+___
+
+## Installation
+```
+$ git clone https://github.com/Ertinox-08/Projet-1.git
+$ cd Projet-1
+```
+### Packages JavaScript
+```
+npm install chart.js
 ```
