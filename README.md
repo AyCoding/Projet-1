@@ -19,5 +19,10 @@ $ cd Projet-1
 ```
 ### Packages JavaScript
 ```
-npm install chart.js
+& npm install chart.js
 ```
+### Packages Python
+```
+$ pip install pandas
+```
+___
