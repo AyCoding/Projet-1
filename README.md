@@ -1,7 +1,7 @@
 # Bienvenue sur le Projet 1
 
 ## Genèse du projet
-Création d'un interface qui permettra de visualisé les rélevés pluviométriques via une page Web
+Création d'une interface qui permettra de visualisé les rélevés pluviométriques via une page Web
 ___
 ## Technologies utilisée
 **JavaScript**
