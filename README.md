@@ -1,5 +1,5 @@
 # Bienvenue sur le Projet 1
-
+![image principal](https://github.com/Ertinox-08/Projet-1/blob/main/src/assets/Github%20Assets.png?raw=true)
 ## Genèse du projet
 Création d'une interface qui permettra de visualisé les rélevés pluviométriques via une page Web
 ___
