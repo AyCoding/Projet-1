@@ -1,5 +1,5 @@
 # Bienvenue sur le Projet 1
-![image principal](https://github.com/Ertinox-08/Projet-1/blob/main/src/assets/Github%20Assets.png?raw=true)
+![image principal](https://github.com/AyCoding/Projet-1/blob/main/src/assets/Github%20Assets.png?raw=true)
 ## Genèse du projet
 Création d'une interface qui permettra de visualisé les rélevés pluviométriques via une page Web
 ___
@@ -14,7 +14,7 @@ ___
 
 ## Installation
 ```
-$ git clone https://github.com/Ertinox-08/Projet-1.git
+$ git clone https://github.com/AyCoding/Projet-1.git
 $ cd Projet-1
 ```
 ### Packages JavaScript
