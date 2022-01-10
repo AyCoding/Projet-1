@@ -1,26 +1,15 @@
 import pandas as pd
 
-#   Fichier avec données sur les relevès pluviométriques
-src = "data/input/releve.csv"
-
-#   Lecture de fichier "releve.csv"
-data = pd.read_csv(src)
-
-#   La somme des données 'data'
-somme = pd.DataFrame.sum(data)
-
 #   Dossier sortie des données récuperer dans "input"
-src_ouptut = "data/output/releve.txt"
+src_ouptut = "data/output/"
 
-#   Ouverture du fichier de sortie et écriture de la somme des colonnes
-# with open(src_ouptut, 'w') as f:
-#     f.write(str(somme))
 
-allmonth = ["JANVIER", "FEVRIER", "MARS", "AVRIL", "MAI", "JUIN", "JUILLET", "AOUT", "SEPTEMBRE", "OCTOBRE", "NOVEMBRE",
-            "DECEMBRE"]
+YEAR = ["2015","2016","2017","2018"]
 
-for mois in allmonth:
-    sum = data[mois].sum()
+for annee in YEAR:
+    src = f"data/input/releve{annee}.csv"
 
-    with open('test.csv', 'w')as test:
-        test.write(str(sum) + "\n")
+    data = pd.read_csv(src)
+    df = pd.DataFrame(data)
+
+    data_set = df.to_json(f"{src_ouptut}revele{annee}.json")
