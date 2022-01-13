@@ -14,7 +14,7 @@ for annee in YEAR:
 
     # data_set = df.to_json(f"{src_ouptut}revele{annee}.json")
 
-    data_set = df.to_json(orient='records')
+    data_set = df.to_json(orient='index')
     # print(data_set)
 
     with open(f"{src_ouptut}revele{annee}.json", 'w') as f:
