@@ -1,1 +1,188 @@
-{"Jour":{"0":1,"1":2,"2":3,"3":4,"4":5,"5":6,"6":7,"7":8,"8":9,"9":10,"10":11,"11":12,"12":13,"13":14,"14":15,"15":16,"16":17,"17":18,"18":19,"19":20,"20":21,"21":22,"22":23,"23":24,"24":25,"25":26,"26":27,"27":28,"28":29,"29":30,"30":31},"OCTOBRE":{"0":null,"1":null,"2":null,"3":null,"4":7.0,"5":4.0,"6":6.0,"7":2.5,"8":null,"9":null,"10":null,"11":null,"12":null,"13":4.0,"14":5.0,"15":4.5,"16":1.0,"17":null,"18":null,"19":null,"20":2.5,"21":1.0,"22":null,"23":null,"24":null,"25":null,"26":1.0,"27":1.0,"28":null,"29":null,"30":null},"NOVEMBRE":{"0":null,"1":null,"2":null,"3":1.0,"4":3.0,"5":8.0,"6":null,"7":1.5,"8":null,"9":1.5,"10":1.0,"11":null,"12":2.0,"13":4.0,"14":null,"15":15.0,"16":20.0,"17":null,"18":22.0,"19":10.0,"20":7.0,"21":null,"22":null,"23":12.0,"24":2.0,"25":null,"26":6.0,"27":14.0,"28":17.0,"29":14.0,"30":null},"DECEMBRE":{"0":8.0,"1":1.0,"2":5.0,"3":null,"4":null,"5":null,"6":null,"7":13.0,"8":1.0,"9":null,"10":13.0,"11":2.0,"12":1.0,"13":null,"14":11.0,"15":6.0,"16":2.0,"17":null,"18":null,"19":null,"20":21.0,"21":2.0,"22":2.0,"23":2.0,"24":7.0,"25":1.0,"26":null,"27":null,"28":null,"29":9.0,"30":1.0}}
+{
+  "0": {
+    "Jour": 1,
+    "OCTOBRE": null,
+    "NOVEMBRE": null,
+    "DECEMBRE": 8.0
+  },
+  "1": {
+    "Jour": 2,
+    "OCTOBRE": null,
+    "NOVEMBRE": null,
+    "DECEMBRE": 1.0
+  },
+  "2": {
+    "Jour": 3,
+    "OCTOBRE": null,
+    "NOVEMBRE": null,
+    "DECEMBRE": 5.0
+  },
+  "3": {
+    "Jour": 4,
+    "OCTOBRE": null,
+    "NOVEMBRE": 1.0,
+    "DECEMBRE": null
+  },
+  "4": {
+    "Jour": 5,
+    "OCTOBRE": 7.0,
+    "NOVEMBRE": 3.0,
+    "DECEMBRE": null
+  },
+  "5": {
+    "Jour": 6,
+    "OCTOBRE": 4.0,
+    "NOVEMBRE": 8.0,
+    "DECEMBRE": null
+  },
+  "6": {
+    "Jour": 7,
+    "OCTOBRE": 6.0,
+    "NOVEMBRE": null,
+    "DECEMBRE": null
+  },
+  "7": {
+    "Jour": 8,
+    "OCTOBRE": 2.5,
+    "NOVEMBRE": 1.5,
+    "DECEMBRE": 13.0
+  },
+  "8": {
+    "Jour": 9,
+    "OCTOBRE": null,
+    "NOVEMBRE": null,
+    "DECEMBRE": 1.0
+  },
+  "9": {
+    "Jour": 10,
+    "OCTOBRE": null,
+    "NOVEMBRE": 1.5,
+    "DECEMBRE": null
+  },
+  "10": {
+    "Jour": 11,
+    "OCTOBRE": null,
+    "NOVEMBRE": 1.0,
+    "DECEMBRE": 13.0
+  },
+  "11": {
+    "Jour": 12,
+    "OCTOBRE": null,
+    "NOVEMBRE": null,
+    "DECEMBRE": 2.0
+  },
+  "12": {
+    "Jour": 13,
+    "OCTOBRE": null,
+    "NOVEMBRE": 2.0,
+    "DECEMBRE": 1.0
+  },
+  "13": {
+    "Jour": 14,
+    "OCTOBRE": 4.0,
+    "NOVEMBRE": 4.0,
+    "DECEMBRE": null
+  },
+  "14": {
+    "Jour": 15,
+    "OCTOBRE": 5.0,
+    "NOVEMBRE": null,
+    "DECEMBRE": 11.0
+  },
+  "15": {
+    "Jour": 16,
+    "OCTOBRE": 4.5,
+    "NOVEMBRE": 15.0,
+    "DECEMBRE": 6.0
+  },
+  "16": {
+    "Jour": 17,
+    "OCTOBRE": 1.0,
+    "NOVEMBRE": 20.0,
+    "DECEMBRE": 2.0
+  },
+  "17": {
+    "Jour": 18,
+    "OCTOBRE": null,
+    "NOVEMBRE": null,
+    "DECEMBRE": null
+  },
+  "18": {
+    "Jour": 19,
+    "OCTOBRE": null,
+    "NOVEMBRE": 22.0,
+    "DECEMBRE": null
+  },
+  "19": {
+    "Jour": 20,
+    "OCTOBRE": null,
+    "NOVEMBRE": 10.0,
+    "DECEMBRE": null
+  },
+  "20": {
+    "Jour": 21,
+    "OCTOBRE": 2.5,
+    "NOVEMBRE": 7.0,
+    "DECEMBRE": 21.0
+  },
+  "21": {
+    "Jour": 22,
+    "OCTOBRE": 1.0,
+    "NOVEMBRE": null,
+    "DECEMBRE": 2.0
+  },
+  "22": {
+    "Jour": 23,
+    "OCTOBRE": null,
+    "NOVEMBRE": null,
+    "DECEMBRE": 2.0
+  },
+  "23": {
+    "Jour": 24,
+    "OCTOBRE": null,
+    "NOVEMBRE": 12.0,
+    "DECEMBRE": 2.0
+  },
+  "24": {
+    "Jour": 25,
+    "OCTOBRE": null,
+    "NOVEMBRE": 2.0,
+    "DECEMBRE": 7.0
+  },
+  "25": {
+    "Jour": 26,
+    "OCTOBRE": null,
+    "NOVEMBRE": null,
+    "DECEMBRE": 1.0
+  },
+  "26": {
+    "Jour": 27,
+    "OCTOBRE": 1.0,
+    "NOVEMBRE": 6.0,
+    "DECEMBRE": null
+  },
+  "27": {
+    "Jour": 28,
+    "OCTOBRE": 1.0,
+    "NOVEMBRE": 14.0,
+    "DECEMBRE": null
+  },
+  "28": {
+    "Jour": 29,
+    "OCTOBRE": null,
+    "NOVEMBRE": 17.0,
+    "DECEMBRE": null
+  },
+  "29": {
+    "Jour": 30,
+    "OCTOBRE": null,
+    "NOVEMBRE": 14.0,
+    "DECEMBRE": 9.0
+  },
+  "30": {
+    "Jour": 31,
+    "OCTOBRE": null,
+    "NOVEMBRE": null,
+    "DECEMBRE": 1.0
+  }
+}
