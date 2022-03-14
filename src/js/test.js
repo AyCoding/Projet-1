@@ -29,7 +29,9 @@ const MONTHS = ["JANVIER", "FEVRIER", "MARS", "AVRIL", "MAI", "JUIN", "JUILLET",
 
 let xhr = new XMLHttpRequest();
 xhr.onload = function () {
-    // Pour tout les jours
+
+
+    /*// Pour tout les jours
     for (let i = 0; i < 31; i++) {
         // Affiche chaque lignes
         console.log(this.response[i]["Jour"])
@@ -37,15 +39,34 @@ xhr.onload = function () {
         // Pour tout les mois
         for (let mois = 0; mois < MONTHS.length; mois++) {
             // Affiche tous les jours
-            // console.log(MONTHS[mois])
+            console.log(MONTHS[mois])
             // console.log(this.response[i][MONTHS[mois]])
 
             selected_data = {
                 "dates": MONTHS[mois],
                 "values": this.response[i][MONTHS[mois]]
             }
-            console.log(selected_data["dates"])
+            // console.log(selected_data["dates"])
         }
+    }*/
+
+    // pour tout les mois
+    for (let mois = 0; mois < MONTHS.length; mois++) {
+        // console.log(MONTHS[mois]);
+
+        for (let day = 0; day < 31; day++) {
+            // console.log(MONTHS[mois])
+            // console.log(this.response[day][MONTHS[mois]])
+
+            let donnees = this.response[day][MONTHS[mois]]
+
+            selected_data = {
+                "dates": MONTHS,
+                "values": JSON.stringify(donnees)
+            }
+            console.log(selected_data["values"])
+        }
+
     }
     buildChart(selected_data);
 };
