@@ -22,6 +22,7 @@ function buildChart() {
     })
 }
 
+let data;
 let selected_data;
 
 const MONTHS = ["JANVIER", "FEVRIER", "MARS", "AVRIL", "MAI", "JUIN", "JUILLET", "AOUT", "SEPTEMBRE", "OCTOBRE", "NOVEMBRE",
@@ -64,7 +65,7 @@ xhr.onload = function () {
                 "dates": MONTHS,
                 "values": JSON.stringify(donnees)
             }
-            console.log(selected_data["values"])
+            // console.log(selected_data["values"])
         }
 
     }
@@ -75,4 +76,14 @@ xhr.open('GET', 'data/output/revele2017.json', true);
 xhr.responseType = "json"; // Indique le type de fichier
 xhr.send();
 
-// dates[0]
+fetch('data/output/revele2017.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("HTTP error " + response.status);
+        }
+        return response.json();
+    })
+    .then(json => {
+        data = json;
+        console.log(data[1]["JANVIER"])
+    })

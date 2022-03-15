@@ -16,6 +16,8 @@ for annee in YEAR:
 
     # Conversion du CSV en JSON
     data_set = df.to_json(orient='index')
+    test = json.dumps(data_set)
+    print(test)
 
     # Ecriture des fichiers avec les données converti en JSON dans /data/output/...csv
     with open(f"{src_ouptut}revele{annee}.json", 'w') as f:
