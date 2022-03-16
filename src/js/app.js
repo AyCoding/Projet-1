@@ -82,19 +82,8 @@ TwoK18.responseType = "json"; // Indique le type de fichier
 TwoK18.send();
 /* == == == == == == == == == */
 
-/* == == == == == == == == == */
-fetch('data/output/revele2016.json')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error("HTTP error " + response.status);
-        }
-        return response.json();
-    })
-    .then(json => {
-        data2016 = json;
-    })
-/* == == == == == == == == == */
 
+/* == == == == == == == == == */
 url = [
     "data/output/revele2015.json",
     "data/output/revele2016.json",
@@ -103,3 +92,4 @@ url = [
 ]
 
 test = [10, 30, 20, 40, 60, 50, 80, 70, 100, 90, 120, 110]
+/* == == == == == == == == == */
