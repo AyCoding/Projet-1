@@ -1,56 +1,105 @@
-// const ctx = document.getElementById('graph').getContext('2d');
+let myChart;
 
-const myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ["JANVIER", "FEVRIER", "MARS", "AVRIL", "MAI", "JUIN", "JUILLET", "AOUT", "SEPTEMBRE", "OCTOBRE", "NOVEMBRE",
-            "DECEMBRE"],
-        datasets: [{
-            label: 'Relevés Pluviométriques',
-            data: [99.5, 99.0, 95.5, 23.5, 66.5, 92.0, 102.0, 100.5, 164.0, 71.0, 159.0, 194.0],
-            fill: true,
-            borderWidth: 3,
-            backgroundColor: ['#333'],
-            borderColor: '#ff8000',
-            tension: 0.1
-        }]
-    },
-});
+function buildChart() {
+    const ctx = document.getElementById('graph').getContext('2d');
+
+    myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: selected_data["dates"],
+            datasets: [{
+                label: '2017',
+                data: selected_data["values"],
+                borderWidth: 3,
+                pointRadius: 0,
+                backgroundColor: 'rgba(0, 168, 235, 0.5)',
+                borderColor: 'rgba(0, 168, 235, 1)',
+                tension: .2
+            },
+                {
+                    label: "2018",
+                    // data: [80, 50, 16, 34.8],
+                    data: test,
+                    borderWidth: 3,
+                    pointRadius: 0,
+                    backgroundColor: 'rgba(235,196,0,0.5)',
+                    borderColor: 'rgba(235,196,0, 1)',
+                    tension: 0.2
+                }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    })
+}
+
+/* == == == == == == == == == */
+
+
+/* == == == == == == == == == */
+let selected_data;
 
 const MONTHS = ["JANVIER", "FEVRIER", "MARS", "AVRIL", "MAI", "JUIN", "JUILLET", "AOUT", "SEPTEMBRE", "OCTOBRE", "NOVEMBRE",
     "DECEMBRE"]
+/* == == == == == == == == == */
 
+
+/* == == == == == == == == == */
 let xhr = new XMLHttpRequest();
 xhr.onload = function () {
-    // console.log(this.response); // http://example.com/test
 
-
-// pour tout les mois
-//         for (let mois = 0; mois < MONTHS.length; mois++ ) {
-//             // console.log(this.response[MONTHS[mois]]);
-//
-//             for (let day = 0; day < 31; day++) {
-//                 console.log(MONTHS[mois])
-//                 console.log(this.response['Jour'][day])
-//             }
-//         }
-
-
-    // Pour tout les jours
-    for (let i = 0; i < 31; i++) {
-        // Affiche chaque lignes
-        // console.log(this.response[i])
-
-
-        // Pour tout les mois
-        for (let mois = 0; mois < MONTHS.length; mois++) {
-            // Affiche tous les jours
-            console.log(MONTHS[mois])
-            console.log(this.response[i][MONTHS[mois]])
-        }
+    selected_data = {
+        "dates": MONTHS,
+        "values": this.response
     }
+
+    buildChart(selected_data);
+    console.log(selected_data);
 };
 
 xhr.open('GET', 'data/output/revele2017.json', true);
 xhr.responseType = "json"; // Indique le type de fichier
 xhr.send();
+/* == == == == == == == == == */
+
+/* == == == == == == == == == */
+let TwoK18 = new XMLHttpRequest();
+TwoK18.onload = function () {
+
+    selected_data = {
+        "dates": MONTHS,
+        "values": this.response
+    }
+    // console.log(selected_data["values"])
+}
+
+TwoK18.open('get', 'data/output/revele2018.json', true);
+TwoK18.responseType = "json"; // Indique le type de fichier
+TwoK18.send();
+/* == == == == == == == == == */
+
+/* == == == == == == == == == */
+fetch('data/output/revele2016.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("HTTP error " + response.status);
+        }
+        return response.json();
+    })
+    .then(json => {
+        data2016 = json;
+    })
+/* == == == == == == == == == */
+
+url = [
+    "data/output/revele2015.json",
+    "data/output/revele2016.json",
+    "data/output/revele2017.json",
+    "data/output/revele2018.json"
+]
+
+test = [10, 30, 20, 40, 60, 50, 80, 70, 100, 90, 120, 110]
