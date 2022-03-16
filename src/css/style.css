@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+/* Reset CSS*/
+@import url("https://unpkg.com/reset-css@5.0.1/reset.css");
+
+/* Font Poppins*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+
+/* Font Fredoka One */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&display=swap");
 
 body {
     box-sizing: border-box;
@@ -15,6 +22,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.main section * {
+    margin: 20px 0;
+}
+
 
 section > p {
     font-size: 18px;
@@ -38,6 +50,8 @@ section > p {
     border-radius: 4px;
     padding: 30px;
     margin: 20px 0;
+    /*width: auto;*/
+    height: auto;
 }
 
 h1 {
@@ -49,4 +63,40 @@ h1 {
 i {
     font-weight: bold;
     text-decoration: underline
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .25);
+    margin-top: 80px;
+}
+
+footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 150px;
+}
+
+footer section * {
+    margin: 5px 0;
+    letter-spacing: 0;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer a {
+    font-weight: 700;
+    color: #112233;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
